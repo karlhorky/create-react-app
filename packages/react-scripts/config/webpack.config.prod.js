@@ -9,6 +9,9 @@
  */
 // @remove-on-eject-end
 
+var atImport = require('postcss-import');
+var simpleVars = require('postcss-simple-vars');
+var nested = require('postcss-nested');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -160,7 +163,7 @@ module.exports = {
         // @remove-on-eject-end
       },
       // The notation here is somewhat confusing.
-      // "postcss" loader applies autoprefixer to our CSS.
+      // "postcss" loader applies postcss-import, postcss-simple-vars, postcss-nested and autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
       // "style" loader normally turns CSS into JS modules injecting <style>,
       // but unlike in development configuration, we do something different.
@@ -173,7 +176,7 @@ module.exports = {
       // in the main CSS file.
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?importLoaders=1!postcss')
+        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1!postcss')
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
@@ -201,9 +204,11 @@ module.exports = {
     useEslintrc: false
   },
   // @remove-on-eject-end
-  // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
+      atImport,
+      simpleVars,
+      nested,
       autoprefixer({
         browsers: [
           '>1%',
