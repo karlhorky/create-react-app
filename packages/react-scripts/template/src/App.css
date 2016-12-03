@@ -1,24 +1,31 @@
-.App {
+@import 'variables.css';
+
+.app {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.logo {
+  animation: app-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
+.header {
+  background-color: $dark-gray;
   height: 150px;
   padding: 20px;
   color: white;
+
+  &:after {
+    content: '';
+    display: block;
+  }
 }
 
-.App-intro {
+.intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes app-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
