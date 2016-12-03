@@ -1,6 +1,9 @@
 {
   "name": "@karlhorky/react-scripts",
   "version": "0.7.0-alpha.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Configuration and scripts for Create React App (with CSS Modules and Sass-like PostCSS plugins).",
   "repository": "karlhorky/create-react-app",
   "license": "BSD-3-Clause",
