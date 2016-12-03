@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
-  "version": "0.8.3",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "name": "@karlhorky/react-scripts",
+  "version": "0.8.3-alpha.0",
+  "description": "Configuration and scripts for Create React App (with CSS Modules and Sass-like PostCSS plugins).",
+  "repository": "karlhorky/create-react-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/karlhorky/create-react-app/issues"
   },
   "files": [
     ".babelrc",
@@ -55,7 +55,10 @@
     "json-loader": "0.5.4",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
+    "postcss-import": "8.2.0",
     "postcss-loader": "1.0.0",
+    "postcss-nested": "1.0.0",
+    "postcss-simple-vars": "3.0.0",
     "promise": "7.1.1",
     "react-dev-utils": "^0.4.1",
     "recursive-readdir": "2.1.0",
