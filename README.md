@@ -6,6 +6,7 @@ Extra features:
 
 * CSS Modules
 * PostCSS (with imports, variables, and nesting)
+* Airbnb JavaScript linting ([mostly](https://github.com/karlhorky/javascript/tree/master/packages/eslint-config-karlhorky) :wink:)
 
 Guides:
 
