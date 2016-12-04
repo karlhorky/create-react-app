@@ -1,6 +1,11 @@
-# Create React App [![Build Status](https://travis-ci.org/facebookincubator/create-react-app.svg?branch=master)](https://travis-ci.org/facebookincubator/create-react-app)
+# @karlhorky's Create React App
 
 Create React apps with no build configuration.
+
+Extra features:
+
+* CSS Modules
+* PostCSS (with imports, variables, and nesting)
 
 * [Getting Started](#getting-started) – How to create a new app.
 * [User Guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.
@@ -10,7 +15,7 @@ Create React apps with no build configuration.
 ```sh
 npm install -g create-react-app
 
-create-react-app my-app
+create-react-app my-app --scripts-version @karlhorky/react-scripts
 cd my-app/
 npm start
 
@@ -82,7 +87,7 @@ You will see the build errors and lint warnings in the console.
 
 ### `npm test`
 
-Runs the test watcher in an interactive mode.  
+Runs the test watcher in an interactive mode.
 By default, runs tests related to files changes since the last commit.
 
 [Read more about testing.](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
@@ -203,7 +208,7 @@ We are grateful to the authors of existing related projects for their ideas and 
 
 ## Alternatives
 
-If you don’t agree with the choices made in this project, you might want to explore alternatives with different tradeoffs.  
+If you don’t agree with the choices made in this project, you might want to explore alternatives with different tradeoffs.
 Some of the more popular and actively maintained ones are:
 
 * [insin/nwb](https://github.com/insin/nwb)
