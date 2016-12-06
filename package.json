@@ -20,5 +20,8 @@
     "eslint-plugin-react": "6.3.0",
     "lerna": "2.0.0-beta.30",
     "lerna-changelog": "^0.2.3"
+  },
+  "dependencies": {
+    "stylelint": "^7.6.0"
   }
 }

@@ -14,6 +14,7 @@ var simpleVars = require('postcss-simple-vars');
 var nested = require('postcss-nested');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ManifestPlugin = require('webpack-manifest-plugin');
