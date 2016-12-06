@@ -207,6 +207,13 @@ module.exports = {
     ];
   },
   plugins: [
+    // Lint our CSS
+    new StyleLintPlugin({
+      // @remove-on-eject-begin
+      configFile: path.join(__dirname, '../.stylelintrc'),
+      // @remove-on-eject-end
+      files: ['**/*.css'],
+    }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In development, this will be an empty string.
