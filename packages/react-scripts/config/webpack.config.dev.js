@@ -208,6 +208,7 @@ module.exports = {
       // @remove-on-eject-begin
       configFile: path.join(__dirname, '../.stylelintrc'),
       // @remove-on-eject-end
+      context: paths.appSrc,
       files: ['**/*.css'],
     }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:

@@ -225,6 +225,7 @@ module.exports = {
       // @remove-on-eject-begin
       configFile: path.join(__dirname, '../.stylelintrc'),
       // @remove-on-eject-end
+      context: paths.appSrc,
       files: ['**/*.css'],
       failOnError: true,
     }),
