@@ -15,7 +15,7 @@
   padding: 20px;
   color: white;
 
-  &:after {
+  &::after {
     content: '';
     display: block;
   }
